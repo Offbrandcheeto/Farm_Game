@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Main Styles */
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(225deg, #00ff00, #00cc00);
+}
+
+img {
+  cursor: pointer;
+  height: 4rem;
+  padding: 0.25rem;
+  transition: opacity 100ms ease-in;
+}
+
+h2 {
+  color: #fff;
+}
+
+/* Main Land Styles */
+
+.land {
+  background-color: #c96500;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 1rem;
+  margin-top: 0.5rem;
+}
+
+.land > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Area Styles */
+
+.main {
+  height: 90vh;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+}
+
+/* Hidden Class */
+
+.hidden {
+  opacity: 0;
+}
+
+.true-hidden {
+  display: none !important;
+}
+
+/* Land 1 */
+
+.land-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.land-area > div:first-child {
+  display: flex;
+}
+
+/* Button */
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  margin: 0 0.5rem;
+  background: #fff;
+  color: #333;
+  border-radius: 0.5rem;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+    height: 150vh;
+  }
+
+  .land-area {
+    margin: 1rem 0;
+  }
+}

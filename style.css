@@ -9,13 +9,17 @@
   padding: 0;
 }
 
+html,
+button {
+  cursor: url('img/sickle.png'), auto;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(225deg, #00ff00, #00cc00);
 }
 
 img {
-  cursor: pointer;
   height: 4rem;
   padding: 0.25rem;
   transition: opacity 100ms ease-in;
@@ -62,7 +66,7 @@ h2 {
   color: #fff;
 }
 
-/* Hidden Class */
+/* Hidden Classes */
 
 .hidden {
   opacity: 0;
@@ -72,7 +76,7 @@ h2 {
   display: none !important;
 }
 
-/* Land 1 */
+/* Land Area */
 
 .land-area {
   display: flex;
@@ -89,7 +93,6 @@ h2 {
 /* Button */
 
 .btn {
-  cursor: pointer;
   outline: none;
   border: none;
   padding: 0.25rem 0.75rem;
@@ -103,6 +106,8 @@ h2 {
 .btn:hover {
   opacity: 0.9;
 }
+
+/* Responsive */
 
 @media (max-width: 900px) {
   .main {

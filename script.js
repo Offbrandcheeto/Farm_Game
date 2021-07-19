@@ -1,7 +1,6 @@
 'use strict';
 
-// 900 all land
-let money = 3500;
+let money = 0;
 const moneyEl = document.getElementById('money');
 
 // Wheat
